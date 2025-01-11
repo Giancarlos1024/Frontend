@@ -1,0 +1,15 @@
+.date-field {
+  width: 200px;
+}
+
+.date-field input[type="date"] {
+  border: 2px solid #38519e;
+  border-radius: 0.4rem;
+  height: 47px;
+  width: 100%;
+  padding: 10px;
+}
+
+.date-field input[type="date"]:focus {
+  outline: none;
+}

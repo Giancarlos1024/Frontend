@@ -1,0 +1,12 @@
+.comisiones-temporales-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 50px;
+}
+
+.comisiones-temporales-page__header {
+  & > h1 {
+    color: #81bb49;
+  }
+}

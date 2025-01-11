@@ -1,7 +1,7 @@
-import React from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import '../Css/Dashboard.css';
+import ComisionesTemporalesIcon from '../icons/ComisionesTemporalesIcon';
+import '../styles/Dashboard.css';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -94,6 +94,20 @@ const Dashboard = () => {
                       {isActive && <div className="active-bar"></div>}
                       <img src={isActive ? "/img/comisionActivo.png" : "/img/comision.png"} alt="error" className='iconNavDashboard' />
                       Comisiones
+                    </>
+                  )}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/comisiones-temporales"
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  {({ isActive }) => (
+                    <>
+                      {isActive && <div className="active-bar"></div>}
+                      <ComisionesTemporalesIcon/>
+                      Comisiones Temporales
                     </>
                   )}
                 </NavLink>

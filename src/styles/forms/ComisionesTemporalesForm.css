@@ -1,0 +1,34 @@
+.comisiones-temporales-form,
+.comisiones-temporales-form_grid-to-two,
+.comisiones-temporales-form_grid-to-three {
+  display: flex;
+  gap: 10px;
+}
+
+.comisiones-temporales-form {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.comisiones-temporales-form label {
+  color: #666666;
+  font-size: 0.78rem;
+}
+
+.comisiones-temporales-form_grid-to-two {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > div {
+    width: 48%;
+    min-width: 188px;
+  }
+}
+
+.comisiones-temporales-form_grid-to-three {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > div {
+    width: 30%;
+    min-width: 188px;
+  }
+}
