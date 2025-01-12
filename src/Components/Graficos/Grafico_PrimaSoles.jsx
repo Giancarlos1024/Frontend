@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import '../../Css/Grafico_PrimaSoles.css'; // Importa el archivo CSS
+import '../../styles/Grafico_PrimaSoles.css'; // Importa el archivo CSS
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, ChartDataLabels);
 

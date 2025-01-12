@@ -1,8 +1,9 @@
-import React, { useState, useEffect,useContext } from 'react';
+import { useState, useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Css/FormFactura.css';
+import '../styles/FormFactura.css';
 import Swal from 'sweetalert2';
-import { UserContext } from '../Provider/UserContext';
+import UserContext from '../context/UserContext';
+
 
 const FormFactura = () => {
 
@@ -105,7 +106,6 @@ const FormFactura = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-  
     
     const updatedFormData = {
       ...formData,
@@ -160,7 +160,7 @@ const FormFactura = () => {
       }
     });
   };
-  
+
   const handleMonedaChange = (e) => {
     const selectedMoneda = e.target.value;
     const otherCurrencyValue = selectedMoneda === 'Dólares' ? '0.0' : ''; // Establecer 0.0 o vacío para la moneda no seleccionada

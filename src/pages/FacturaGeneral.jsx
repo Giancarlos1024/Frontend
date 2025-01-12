@@ -1,15 +1,15 @@
-import React, { useContext,useEffect, useState } from 'react';
-import '../Css/FacturaGeneral.css';
-import '../Css/Grafico_PrimaSoles.css';
-import { UserContext } from '../Provider/UserContext';
-import { Grafico_PrimaSoles } from '../Components/Graficos/Grafico_PrimaSoles';
-import { Grafico_PrimaDolares } from '../Components/Graficos/Grafico_PrimaDolares';
-import { Grafico_OficinasPrimas } from '../Components/Graficos/Grafico_OficinasPrimas';
-import { Grafico_OficinasPrimasDolares } from '../Components/Graficos/Grafico_OficinasPrimasDolares';
-import { Grafico_RamoSBSPrimaComisiones } from '../Components/Graficos/Grafico_RamoSBSPrimaComisiones';
-import { Grafico_RamoSBSPrimaComisionesDolares } from '../Components/Graficos/Grafico_RamoSBSPrimaComisionesDolares';
-import PrimasPorAnio from '../Components/PrimasPorAnio';
-import ComisionesPorAnio from '../Components/ComisionesPorAnio';
+import { useContext,useEffect, useState } from 'react';
+import '../styles/FacturaGeneral.css';
+import '../styles/Grafico_PrimaSoles.css';
+import { Grafico_PrimaSoles } from '../components/Graficos/Grafico_PrimaSoles';
+import { Grafico_PrimaDolares } from '../components/Graficos/Grafico_PrimaDolares';
+import { Grafico_OficinasPrimas } from '../components/Graficos/Grafico_OficinasPrimas';
+import { Grafico_OficinasPrimasDolares } from '../components/Graficos/Grafico_OficinasPrimasDolares';
+import { Grafico_RamoSBSPrimaComisiones } from '../components/Graficos/Grafico_RamoSBSPrimaComisiones';
+import { Grafico_RamoSBSPrimaComisionesDolares } from '../components/Graficos/Grafico_RamoSBSPrimaComisionesDolares';
+import PrimasPorAnio from '../components/PrimasPorAnio';
+import ComisionesPorAnio from '../components/ComisionesPorAnio';
+import UserContext from '../context/UserContext';
 
 
 

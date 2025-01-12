@@ -1,0 +1,20 @@
+.text-field {
+  width: 200px;
+}
+
+.text-field label {
+  color: #666666;
+  font-size: 0.78rem;
+}
+
+.text-field input[type="text"] {
+  border: 2px solid #38519e;
+  border-radius: 0.4rem;
+  height: 47px;
+  width: 100%;
+  padding: 10px;
+}
+
+.text-field input[type="text"]:focus {
+  outline: none;
+}

@@ -1,0 +1,20 @@
+.options-field {
+  width: 200px;
+}
+
+.options-field label {
+  color: #666666;
+  font-size: 0.78rem;
+}
+
+.options-field select {
+  border: 2px solid #38519e;
+  border-radius: 0.4rem;
+  height: 47px;
+  width: 100%;
+  padding: 10px;
+}
+
+.options-field select:focus {
+  outline: none;
+}

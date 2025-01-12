@@ -1,6 +1,6 @@
-import React, { createContext, useState, useEffect } from 'react';
-
-export const UserContext = createContext();
+import { useState, useEffect, useMemo } from 'react';
+import PropTypes from 'prop-types'
+import UserContext from '../context/UserContext';
 
 export const UserProvider = ({ children }) => {
   const [username, setUsername] = useState('');
@@ -13,9 +13,15 @@ export const UserProvider = ({ children }) => {
     if (storedToken) setToken(storedToken);
   }, []);
 
+  const value = useMemo(() => ({ username, setUsername, token, setToken }), [username, token]);
+
   return (
-    <UserContext.Provider value={{ username, setUsername, token, setToken }}>
+    <UserContext.Provider value={value}>
       {children}
     </UserContext.Provider>
   );
 };
+
+UserProvider.propTypes = {
+  children: PropTypes.element.isRequired
+}

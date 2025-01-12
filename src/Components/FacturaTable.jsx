@@ -2,11 +2,11 @@ import React, { useState, useEffect, useContext, useMemo } from 'react';
 import Swal from 'sweetalert2';
 import { Snackbar, Alert } from '@mui/material';
 import * as XLSX from 'xlsx';
-import '../Css/FacturaTable.css';
+import '../styles/FacturaTable.css';
 import ModalFactura from './ModalFactura';
 
 import TruncatedText from './TruncatedText'; // Importa el nuevo componente
-import { UserContext } from '../Provider/UserContext';
+import UserContext from '../context/UserContext';
 
 const FacturaTable = () => {
 

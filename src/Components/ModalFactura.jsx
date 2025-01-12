@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2'; // Importa Swal
-import '../Css/ModalFactura.css';
+import '../styles/ModalFactura.css';
 
 const ModalFactura = ({ open, onClose, factura, onSave }) => {
   const [formData, setFormData] = useState({});

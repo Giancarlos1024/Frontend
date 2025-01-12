@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Swal from 'sweetalert2';
 import { Snackbar, Alert } from '@mui/material';
 import * as XLSX from 'xlsx';
-import '../Css/FacturaBreve.css';
+import '../styles/FacturaBreve.css';
 
 const FacturaBreve = () => {
   const [facturas, setFacturas] = useState([]);
