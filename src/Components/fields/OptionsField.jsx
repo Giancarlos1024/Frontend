@@ -14,13 +14,15 @@ import '../../styles/fields/OptionsField.css';
  * @returns {JSX.Element} The rendered options field component.
  */
 function OptionsField({ name, label, value, setValue, options, defaultValue }) {
+  const changeValue = setValue || function() {}
+
   return (
     <div className="options-field">
       <label htmlFor={name}>{label}</label>
       <select
         id={name}
         name={name}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => changeValue(e.target.value)}
         value={value}
         defaultValue={defaultValue || 'Seleccione'}
       >
@@ -41,7 +43,7 @@ OptionsField.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string,
-  setValue: PropTypes.func.isRequired,
+  setValue: PropTypes.func,
   options: PropTypes.array.isRequired,
   defaultValue: PropTypes.string
 };

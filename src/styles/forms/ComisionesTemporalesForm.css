@@ -7,12 +7,7 @@
 
 .comisiones-temporales-form {
   flex-direction: column;
-  gap: 40px;
-}
-
-.comisiones-temporales-form label {
-  color: #666666;
-  font-size: 0.78rem;
+  gap: 50px;
 }
 
 .comisiones-temporales-form_grid-to-two {
@@ -31,4 +26,8 @@
     width: 30%;
     min-width: 188px;
   }
+}
+
+.comisiones-temporales-form button {
+  align-self: flex-end;
 }

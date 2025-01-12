@@ -20,6 +20,11 @@ input[type="number"] {
   width: 200px;
 }
 
+.number-field label {
+  color: #666666;
+  font-size: 0.78rem;
+}
+
 .number-field input[type="number"] {
   border: 2px solid #38519e;
   border-radius: 0.4rem;
