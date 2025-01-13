@@ -3,6 +3,7 @@
  * @class ComisionTemporal
  */
 class ComisionTemporal {
+  #id;
   #poliza;
   #factura;
   #fecha;
@@ -12,6 +13,22 @@ class ComisionTemporal {
   #prima;
   #comision;
   #username;
+
+  /**
+   * Establece el monto de la prima.
+   * @param {number} id - Id del seguro.
+   */
+  setId(id) {
+    this.#id = id;
+  }
+
+  /**
+   * Obtiene el monto de la prima.
+   * @returns {number} Id de la prima.
+   */
+  getId() {
+    return this.#id;
+  }
 
   /**
    * Establece el número de póliza.
