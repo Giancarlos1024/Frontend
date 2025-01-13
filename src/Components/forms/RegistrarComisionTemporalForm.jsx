@@ -47,7 +47,7 @@ const handleSubmit = async (event) => {
   }
 }
 
-function ComisionesTemporalesForm() {
+function RegistrarComisionTemporalForm() {
   const [moneda, setMoneda] = useState('SOLES');
 
   return (
@@ -71,4 +71,4 @@ function ComisionesTemporalesForm() {
   );
 }
 
-export default ComisionesTemporalesForm;
+export default RegistrarComisionTemporalForm;

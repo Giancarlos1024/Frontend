@@ -1,7 +1,7 @@
 .comisiones-temporales-page {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   margin: 30px 50px;
 }
 
@@ -11,8 +11,14 @@
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+}
 
+.comisiones-temporales-page__header__title {
   & > h1 {
     color: #81bb49;
+  }
+
+  & > h3 {
+    color: #38519e;
   }
 }

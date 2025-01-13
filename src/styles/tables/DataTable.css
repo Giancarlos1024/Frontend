@@ -1,0 +1,121 @@
+/* Contenedor principal */
+.container-table {
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Encabezado de la tabla */
+.table__row--header {
+  background-color: #f5f5f5;
+}
+
+.table__column {
+  padding: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 2px solid #ddd; /* Línea divisoria */
+}
+
+/* Filas de la tabla */
+.table__row {
+  transition: background-color 0.2s ease;
+}
+
+.table__row:hover {
+  background-color: #f9f9f9; /* Color de fondo al pasar el mouse */
+}
+
+.table__row td {
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Línea divisoria */
+  color: #333; /* Cambia este color si lo necesitas */
+}
+
+/* Botones de acción */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button[type="button"] {
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Cambia este color si lo necesitas */
+}
+
+/* Botones del paginador */
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.paginator__back,
+.paginator__next {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 4px;
+  background-color: #ffffff; /* Cambia este color si lo necesitas */
+  color: #333; /* Cambia este color si lo necesitas */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.paginator__back:disabled,
+.paginator__next:disabled {
+  background-color: #f5f5f5; /* Color para botones deshabilitados */
+  color: #aaa; /* Texto deshabilitado */
+  cursor: not-allowed;
+}
+
+.paginator__back:hover:not(:disabled),
+.paginator__next:hover:not(:disabled) {
+  background-color: #f0f0f0; /* Cambia este color si lo necesitas */
+}
+
+/* Botón de editar - amarillo */
+.edit-button {
+  background-color: #f1c40f; /* Amarillo */
+  color: white;
+  border: 1px solid #f39c12; /* Borde de color amarillo oscuro */
+  margin-bottom: 5px;
+}
+
+.edit-button:hover {
+  background-color: #f39c12; /* Cambio de color al pasar el mouse */
+  color: white;
+}
+
+/* Botón de borrar - rojo */
+.delete-button {
+  background-color: #e74c3c; /* Rojo */
+  color: white;
+  border: 1px solid #c0392b; /* Borde de color rojo oscuro */
+}
+
+.delete-button:hover {
+  background-color: #c0392b; /* Cambio de color al pasar el mouse */
+  color: white;
+}
